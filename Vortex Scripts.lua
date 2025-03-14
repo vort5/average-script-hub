@@ -12,10 +12,13 @@
 
 local NotificationLibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/vort5/VortexNotif/main/source.lua"))()
 
-if game.GameId == 4585104535 then
+local currentPlaceId = game.PlaceId
+print("Current Place ID:", currentPlaceId)
+
+if currentPlaceId == 4585104535 or currentPlaceId == 4865087807 or currentPlaceId == 6823014939 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/vort5/Vortex-Scripts/refs/heads/main/shinobistormscript.lua"))()
     
-elseif game.GameId == 3082130015 then
+elseif currentPlaceId == 3082130015 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/vort5/Vortex-Scripts/refs/heads/main/ninjamagicscript.lua"))()
     
 else
